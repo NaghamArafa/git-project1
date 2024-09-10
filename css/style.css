@@ -1,0 +1,801 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'varela round' , sans-serif ;
+    text-transform: capitalize;
+}
+.main{
+    position: relative;
+
+}
+.navBar{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 100;
+}
+.navBar .logo img{
+    width: 150px;
+    height: 70px;
+    float: left;
+    margin: 0px 50px;
+}
+.navBar .list ul{
+    list-style: none;
+    float: right;
+}
+.navBar .list li {
+    margin: 20px 30px 0px 0px ;
+    width: 70px ;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    background-color:#114c95;    
+    color: white;
+    border: 2px solid #114c95;
+    cursor: pointer;
+}
+.navBar .list .home{
+    color:  black;
+    background-color: rgb(228, 229, 234);
+}
+.navBar .list li:hover{
+    color:  black;
+    background-color: rgb(228, 229, 234);
+}
+.section1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image:url(../img/1337527.png);
+    background-size:100% 100dvh;
+}
+.section1 .layout{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.section1 .layout .contact{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.section1 .layout .contact h1{
+    color: white;
+    font-size: 65px;
+}
+.section1 .layout .contact p{
+    color: rgb(202, 196, 196);
+    font-size: 20px;
+    padding: 20px 0px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.section1 .layout .contact button{
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 0;
+    margin-right: 30px;
+    background-color: rgb(184, 180, 180);
+    cursor: pointer;
+}
+.section1 .layout .contact .b2{
+    color: #fff;
+    background-color:#114c95;
+}
+.section1 .layout .contact button:hover{
+    opacity: 0.7;
+    padding: 22px 32px;
+}
+.section2{
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: #d2d1d3;
+    overflow: auto;
+}
+.section2 .title{
+    text-align: center;
+    margin: 50px;
+}
+.section2 .title h2{
+    font-size: 40px;
+    text-decoration: underline;
+    color: #0e417e;
+
+}
+.section2 .container{
+    text-align: center;
+    width: 80%;
+    height: 400px;
+    margin: auto ;
+}
+.section2 .container .language{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    height: 350px;
+    float: left;
+    padding-top: 20px;
+    position: relative;
+}
+.section2 .container .css{
+    margin: 0px 5%;
+}
+.section2 .container .language i{
+    color:#306eba;
+    font-size: 70px;
+    padding: 0px 40%;
+}
+.section2 .container .language h3{
+    padding: 25px;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.section2 .container .language p{
+    font-size: 20px;
+    padding: 15px 0px 15px 0px;
+    background-color:rgba(48, 110, 186 , 0.6);
+    width:  70% ;
+    margin: 0px auto 20px;
+    border-radius: 20px;   
+}
+.section2 .container .language a{
+    font-size: 20px ;
+    text-decoration: none;
+}
+.section2 .container .language:hover{
+    color:  #fff;
+    z-index: 2;
+    transition: 2s;
+}
+.section2 .container .language:hover a{
+    color:  #6672de;
+    z-index: 2;
+    transition: 2s;
+}
+.section2 .container .language:after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    background-color:#092358;
+    z-index: -10;
+}
+.section2 .container .language:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    transition: 1s;
+}
+.section3{
+    padding-top: 50px;
+    width: 100%;
+    height: 900px;
+    background-color: #fff;
+    overflow: auto;
+}
+.section3 .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section3 .title h2{
+    font-size: 40px;
+    text-decoration: underline;
+    color: #114c95;
+
+}
+.section3 .paths{
+    text-align: center;
+    width: 80%;
+    height: 88%;
+    margin: auto ;
+}
+.section3 .paths .path{
+    width: 28%;
+    height: 45%;
+    float: left;
+    position: relative;
+    margin: 1.5% 2.5%;
+    border: 1px solid #a9a9a9;
+}
+.section3 .paths .path img{
+    width: 80%;
+    margin-top:10% ;
+
+}
+.section3 .paths .path h4{
+    width: 80%;
+    margin: 10% 10%;
+    font-size: 45px;
+    padding: 23% 0px;
+    color:#114c95;
+    background-color:  #dad4d4 ;
+}
+.section3 .paths .path .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.section3 .paths .path:hover .overlay{
+    background-color: rgb(28, 28, 28);
+    opacity: 0.8;
+    transition: 1s;
+}
+.section3 .paths .path:hover .overlay .info h5{
+    visibility: visible;
+    transition: 1s;
+    top: 55px;
+}
+.section3 .paths .path:hover .overlay .info p{
+    visibility: visible;
+    transition: 1s;
+    top: 55px;
+
+}
+.section3 .paths .path:hover .overlay .info i{
+    visibility: visible;
+    transition: 2s;
+    top: 120px;
+}
+.section3 .paths .path .overlay .info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.section3 .paths .path .overlay .info h5{
+    color: #6195ff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 40px;
+    position: relative;
+    top: 25px;
+    visibility: hidden;
+}
+.section3 .paths .path .overlay .info p{
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    top: 15px;
+    visibility: hidden;
+}
+.section3 .paths .path .overlay .info a i{
+    font-size: 45px;
+    padding: 5px;
+    margin-right: 10px;
+    top: 150px;
+    background-color: #224ea7;
+    color: #fff;
+    position: relative;
+    visibility: hidden;
+}
+.section4{
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: #d2d1d3;
+    overflow: auto;
+}
+.section4 .title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+    color: #114c95;
+}
+.section4 .offers{
+    width: 80%;
+    height: 80%;
+    margin: auto ;
+}
+.section4 .offers .offer{
+    background-color: #fff;
+    width: 30%;
+    height: 35%;
+    float: left;
+    margin-bottom: 5%;
+    position: relative;
+}
+.section4 .offers .offer i{
+    font-size: 35px;
+    margin-left: 5px;
+    padding: 20px 10px;
+    color: #5479c4;
+}
+.section4 .offers .offer h3{
+    font-size: 25px;
+    display: inline-block;
+}
+.section4 .offers .offer p{
+    padding: 10px 30px;
+}
+.section4 .offers .offer:hover {
+    color:  #fff;
+    z-index: 2;
+    transition: 1s;
+    
+}
+.section4 .offers .offer:after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    background-color:#092358;
+    z-index: -1;
+}
+.section4 .offers .offer:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    transition: 1s;
+}
+.section4 .offers .middle {
+    margin: 0px  5%;
+}
+.section5{
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: auto;
+}
+.section5 .information{
+    width: 40%;
+    height: 80%;
+    margin: 0px 5% ;
+    padding: 20px 20px;
+    float: left;
+    text-transform: lowercase;
+    font-size: 25px;
+}
+.section5 .information h1{
+    font-size: 35px;
+    color: #153981;
+}
+.section5 .information hr{
+    width: 35%;
+    margin: 10px 20px;
+}
+.section5 .information p {
+    margin: 30px 0px;
+    font-size: 22px;
+    color: #153981;
+}
+.section5 .information ul{
+    margin: 30px 0px ;
+    list-style: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #153981;
+}
+.section5 .information i{
+    color: #6195ff;
+}
+.section5 .image{
+    width: 40%;
+    margin:0px 5%;
+    float: left;
+}
+.section5 .image img {
+    width: 80%;
+    height: 70%;
+}
+.section5 .image ul {
+    margin: 0px 50px;
+}
+.section5 .image ul .first {
+    background-color:#6195ff;
+}
+.section5 .image li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #b6b2b2;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.section5 .image li:hover{
+    background-color:#6195ff;
+}
+.section6{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image:url(../img/photo-1534972195531-d756b9bfa9f2.avif);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.section6 .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section6 .overlay .rate{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+    padding-top: 120px;
+}
+.section6 .overlay .rate .one {
+    width: 25%;
+    float: left;
+    text-align: center;
+    height: 150px;
+}
+.section6 .overlay .rate .one i{
+    font-size: 40px;
+    color: #6195ff;
+}
+.section6 .overlay .rate .one h2{
+    font-size: 45px;
+    color: #fff;
+    margin: 20px 0px;
+}
+.section6 .overlay .rate .one p {
+    color: #6195ff;
+}
+.section7{
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: auto;
+    text-align: center;
+}
+.section7 .title {
+    color: #153981;
+}
+.section7 .title h1{
+    font-size: 35px;
+}
+.section7 .title hr{
+    margin: 20px auto;
+    width: 100px;
+    border: 2px solid #153981;
+    ;
+}
+.section7 .prices{
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    margin: 60px auto 0px ;
+}
+.section7 .prices .price{
+    border: 1px solid #a9a9a9;
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 80%;
+    background-color: #e9e6eb;
+    text-align: center;
+    color: #13316e;
+}
+.section7 .prices .midd{
+    margin: 0px 5%;
+}
+.section7 .prices .price .plan{
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+.section7 .prices .price .number{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #a9a9a9 ;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    
+}
+.section7 .prices .price .number p{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section7 .prices .price .number h1{
+    font-size: 40px;
+}
+.section7 .prices .price .dis p {
+    margin: 10px;
+}
+.section7 .prices .price button{
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color:#114c95;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.section7 .prices .price:hover {
+    color:  #6195ff;
+    transition: 1s ;
+}
+.section7 .prices .price:hover button{
+    background-color:  #6195ff;
+    transition: 2s;
+}
+.section7 .prices .price:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:black;
+    transition: 0.5s;
+    opacity: 0;
+}
+.section7 .prices .price:hover::before{
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+    opacity: 0.5;
+}
+.section8{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image:url(../img/01212022-1047259374-coding-classes_scanrail.webp);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.section8 .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section8 .overlay .people{
+    width: 80%;
+    margin: 10%;
+    overflow: auto;
+}
+.section8 .overlay .people .one{
+    width: 40%;
+    margin: auto;
+    float: left;
+    text-align: center;
+}
+.section8 .overlay .people .one .image img{
+    width: 30%;
+    float: left;
+}
+.section8 .overlay .people .one .text h2{
+    color: #fff;
+    margin-top: 35px;
+}
+.section8 .overlay .people .one .text p{
+    color: #6195ff;
+    margin-top: 15px;
+}
+.section8 .overlay .people .two{
+    margin-left:10% ;
+}
+.section9{
+    padding-top: 50px;
+    width: 100%;
+    height: 85vh;
+    background-color: #fff;
+    overflow: auto;
+    text-align: center;
+}
+.section9 .title {
+    font-size: 25px;
+    margin-bottom: 50px;
+    color:#477ff0;
+}
+.section9 .team{
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    margin: auto ;
+}
+.section9 .team .member{
+    border: 1px solid #a9a9a9;
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(222, 217, 217);
+    text-align: center;
+    display: block;
+}
+.section9 .team .mid{
+    margin: 0px 5%;
+}
+
+.section9 .team .member .photo {
+    width: 80%;
+    margin:5% 10%;
+    background-color: white;
+    position: relative;
+}
+.section9 .team .member .photo img {
+    width: 80%;
+}
+.section9 .team .member .photo .layout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+}
+.section9 .team .member:hover .layout{
+    visibility: visible;
+}
+.section9 .team .member .photo .layout  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #7ba7ff;
+    color: #fff;
+    margin-left: auto;    
+}
+.section9 .team .member .photo .layout  a  i{
+    line-height: 40px    
+}
+.section9 .team .member .text h2{
+    margin-bottom: 10px;
+}
+.section9 .team .member .text p{
+    color: #477ff0;
+}
+.section9 .team .member:hover h2 {
+    color:  #ffffff;
+}
+.section9 .team .member:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+.section9 .team .member:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+}
+.section10{
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: auto;
+}
+.section10 .title h1{
+    text-align: center;
+    font-size: 35px;
+    margin: 50px ;
+    color: #306eba;
+}
+.section10 .news{
+    width: 80%;
+    height: 70%;
+    margin: auto ;
+}
+.section10 .news .one{
+    border: 1px solid #a9a9a9;
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(243, 239, 239);
+}
+.section10 .news .middle{
+    margin: 0px 5%;
+}
+.section10 .news .one .ad img{
+    width: 80%;
+    margin-left: 10%;
+}
+.section10 .news .one ul {
+    margin: 20px 0px ;
+}
+.section10 .news .one .more li{
+    color:rgb(97, 149, 255) ;
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+.section10 .news .one .more h2{
+    font-size: 20px;
+    margin: 7px ;
+}
+.section10 .news .one .more p{
+    margin: 10px ;
+}
+.section10 .news .one .more a{
+    margin: 10px 20px ;
+}
+.section10 .news .one:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(97, 149, 255);
+    opacity: 0;
+    transition: 1.5s;
+}
+.section10 .news .one:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1.5s;
+}
+.section11{
+    width: 100%;
+    height: 40vh;
+    background-color: #023e8a;
+    text-align: center;
+}
+.section11 img{
+    width: 20%;
+    text-align: center;
+    margin:  30px 20% 20px 20%;
+}
+.section11 li{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.section11 li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color:#6195ff;
+    font-size: 25px;
+}
+.section11 li a:hover{
+    background-color:#072b57;
+    border: 0.5px solid #c7c5c5;
+    transition: 0.5s;
+}
+.section11 .about p{
+    margin: 10px;
+    color: #fff;
+}
